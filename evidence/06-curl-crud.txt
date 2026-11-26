@@ -1,0 +1,30 @@
+Base URL: https://ffqglb4sorifqud2vbv5mpdrtm0rfoqy.lambda-url.us-east-1.on.aws
+Waktu   : 2026-11-26T09:18:56Z
+
+== 1. POST valid (harap 201)
+{"id":"bddea83e-4f91-4d6b-915f-74115efad02d","buyer_name":"Budi","type":"vip","price":250000,"created_at":"2026-11-26T09:18:57.462Z"} [201]
+   -> PASS
+   id baru: bddea83e-4f91-4d6b-915f-74115efad02d
+== 2. POST nama kosong (harap 400)
+{"error":"buyer_name wajib diisi"} [400]
+   -> PASS
+== 3. POST type gold (harap 400)
+{"error":"type harus salah satu dari: regular, vip"} [400]
+   -> PASS
+== 4. GET list (harap 200)
+[{"id":"bddea83e-4f91-4d6b-915f-74115efad02d","buyer_name":"Budi","type":"vip","price":250000,"created_at":"2026-11-26T09:18:57.462Z"},{"id":"27e2b089-0fa7-4bed-9dfb-dcd291864fd2","buyer_name":"Budi","type":"vip","price":250000,"created_at":"2026-11-26T09:12:22.984Z"}] [200]
+   -> PASS
+== 5. PUT id yang ada (harap 200)
+{"id":"bddea83e-4f91-4d6b-915f-74115efad02d","buyer_name":"Budi S","type":"regular","price":150000,"created_at":"2026-11-26T09:18:57.462Z"} [200]
+   -> PASS
+== 6. PUT id tidak ada (harap 404)
+{"error":"tiket tidak ditemukan"} [404]
+   -> PASS
+== 7. DELETE id yang ada (harap 204)
+ [204]
+   -> PASS
+== 8. DELETE id yang sama lagi (harap 404)
+{"error":"tiket tidak ditemukan"} [404]
+   -> PASS
+
+Hasil: 8 PASS, 0 FAIL
