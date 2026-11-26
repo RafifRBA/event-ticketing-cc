@@ -4,6 +4,8 @@ Tugas Cloud Computing(Design & AWS Setup).
 
 Rafif Raihan Bahrul Alam · 24/534432/TK/59237
 
+Repository: https://github.com/RafifRBA/event-ticketing-cc
+
 API CRUD sederhana untuk tiket acara (tipe `regular` atau `vip`), dibangun dengan arsitektur
 **Track C: Serverless** di AWS Academy Cloud Foundations Sandbox, region `us-east-1`.
 
