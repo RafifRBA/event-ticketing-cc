@@ -1,0 +1,5 @@
+*.pdf
+!docs/*.pdf
+.impeccable/
+docs-src/
+scripts/build-pdf.sh
