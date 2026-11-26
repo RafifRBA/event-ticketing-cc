@@ -1,6 +1,7 @@
 # event-ticketing-cc
 
-Tugas individu Cloud Computing, Week 12 (Design & AWS Setup).
+Tugas Cloud Computing(Design & AWS Setup).
+
 Rafif Raihan Bahrul Alam · 24/534432/TK/59237
 
 API CRUD sederhana untuk tiket acara (tipe `regular` atau `vip`), dibangun dengan arsitektur
